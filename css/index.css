@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+
+:root {
+  --main-bg-color: hsl(0, 100%, 74%);
+}
+
+header,
+nav, 
+footer, 
+section, 
+article,
+div {
+  display: block;
+}
+
+html,body {
+	margin: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--main-bg-color);
+  background-image: url("../imgs/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.description {
+  width: 50%;
+}
+
+.user-section {
+  width: 50%;
+}
+
+#title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  padding: 0px 100px 0 300px;
+  line-height: 62px;
+}
+
+#subtitle {
+  font-weight: 400;
+  padding: 0 150px 0 300px;
+  margin-top: -20px;
+}
+
+#try-it {
+  padding: 14px 25px;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0px 8px hsl(249, 10%, 26%, 25%);
+  width: 30vw;
+  text-align: center;
+  font-weight: 300 !important;
+}
+
+.landing-form {
+  width: 30vw;
+  background-color: #FFF;
+  padding: 35px 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 8px hsl(249, 10%, 26%, 25%);
+}
+
+.form-group {
+  display: block;
+  margin-top: 15px;
+  width: -webkit-fill-available;
+  margin: 20px;
+  padding: 18px 40px;
+  border-radius: 6px;
+  border: 1px solid hsl(246, 25%, 77%, 50%);
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.form-group:focus {
+  outline: none !important;
+  border: 1px solid hsl(248, 32%, 49%);
+}
+
+label {
+  display: none;
+}
+
+.warning {
+  width: 25px;
+  height: 25px;
+  background-color: var(--main-bg-color);
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  right: 21%;
+  margin-top: -62px;
+  font-weight: 500;
+}
+
+.form-warning {
+  font-size: 0.7em;
+  color: hsl(246, 25%, 77%);
+}
+
+#terms-services {
+  color: var(--main-bg-color);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 1px;
+}
+
+#btn-free-trial {
+  background-color: hsl(154, 59%, 51%);
+  font-weight: 500;
+  border: 2px solid #3ac487;
+  padding: 13px 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#btn-free-trial:hover {
+  background-color: hsla(154, 59%, 51%, 0.70);
+}
+
+#error-message {
+  display: none;
+  color: var(--main-bg-color);
+  font-style: italic;
+  font-size: .7em;
+  text-align: end;
+  margin: -13px 24px 0px 0px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  #title {
+    padding: 0;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+    margin: 20px;
+  }
+
+  #subtitle {
+    text-align: center;
+    padding: 24px 17px;
+    font-size: 17px;
+  }
+
+  .description {
+    padding: 0px;
+    width: 100%;
+  }
+
+  #try-it {
+    padding: 20px 25px;
+    font-weight: 200 !important;
+    margin: 20px;
+    font-size: 1.2em;
+    width: unset;
+  }
+
+  .landing-form {
+    width: unset;
+    padding: 35px 0px;
+    margin: 20px;
+    margin-bottom: 60px;
+  }
+
+  .warning {
+    right: 16%;
+  }
+
+  .main {
+    flex-flow: column;
+  }
+  .user-section {
+    padding: 0;
+    width: 100%;
+  }
+
+  .form-warning {
+    font-size: 0.7em;
+    color: hsl(246, 25%, 77%);
+    margin: 0 30px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1300px) {
+  #subtitle {
+    font-weight: 400;
+    padding: 0px 90px 0 100px;
+    margin-top: -20px;
+    font-size: 20px;
+  }
+
+  #title {
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 0px 100px 0 100px;
+    line-height: 62px;
+  }
+
+  .warning {
+    right: 16%;
+    margin-top: -56px;
+  }
+
+  #try-it {
+    width: 35vw;
+  }
+
+  .landing-form {
+    width: 35vw;
+  }
+
+  .form-group {
+    margin: 14px 8px;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <section class="description">
+        <h1 id="title">Learn to code by watching others</h1>
+        <p id="subtitle">See how experienced developers solve problems in real-time. 
+          Watching scripted tutorials is great, but understanding how developers think is invaluable.
+        </p>
+      </section>
+      <section class="user-section">
+        <span id="try-it"><strong>Try it free 7 days</strong> then $20/mo. thereafter</span>
+        <div class="landing-form">
+          <form id="free-trial-form">
+            <div id="first_name">
+              <label>First Name</label>
+              <input aria-label="first name" class="form-group" type="text" name="firstName" placeholder="First Name">
+              <span class="warning">!</span>
+              <span id="error-message">First Name cannot be empty</span>
+            </div>
+            <div id="last_name">
+              <label>Last Name</label>
+              <input aria-label="last name" class="form-group" id="lastName" type="text" name="lastName" placeholder="Last Name">
+              <span class="warning">!</span>
+              <span id="error-message">Last Name cannot be empty</span>
+            </div>
+            <div id="email">
+              <label>Email</label>
+              <input aria-label="email" class="form-group" type="email" name="email" placeholder="Email Address">
+              <span class="warning">!</span>
+              <span id="error-message">Looks like this is not an email</span>
+            </div>
+            <div id="password">
+              <label>Password</label>
+              <input aria-label="password" class="form-group"type="password" name="password" placeholder="Password">
+              <span class="warning">!</span>
+              <span id="error-message">Password cannot be empty</span>
+            </div>
+            <span class="form-group" id="btn-free-trial">claim your free trial</span>
+          </form>
+          <span class="form-warning">By clicking the button, you are agreeing to our <a id="terms-services" href="#">Terms and Services</a></span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
