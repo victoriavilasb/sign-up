@@ -97,10 +97,6 @@ img {
   border: 1px solid hsl(248, 32%, 49%);
 }
 
-label {
-  display: none;
-}
-
 .warning {
   width: 25px;
   height: 25px;
